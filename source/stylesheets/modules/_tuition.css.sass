@@ -39,6 +39,10 @@
       background: #656565 center center no-repeat
       background-size: 67px 51px
       +border-radius(50%)
+      +transition(background .3s)
+
+    &:hover:before
+      background-color: $blue
 
     @each $number in one, two, three, four
       &.#{$number}:before
