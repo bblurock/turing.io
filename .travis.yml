@@ -1,0 +1,10 @@
+rvm:
+- 2.0.0
+- 2.1.0
+script: bundle exec middleman build
+env: TEST=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: a9rnmEpqKd2goLJAf8Zyh+UP8fQLesTMzzQQd05IG8Jc0Dv517V5qcfsev0agbKRDO6vjic3ruG+jO4+/D0O7PyXReRwHkHHmxs4MPtUl9GOdQuWhH3EpUHlLL3ExEbr/HWlooGiojuEZppeWvJ0+mCSqslbPctrpX+snXCmHic=
+  app: turing-web
