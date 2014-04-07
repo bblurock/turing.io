@@ -14,3 +14,6 @@ $(document).ready ->
   thanks = $('.thanks')
   $('<span class="hide">hide</span>').appendTo(thanks).click ->
     thanks.hide()
+
+  $('.index .mod-people figure').click ->
+    window.location = '/team'
