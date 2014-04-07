@@ -5,7 +5,5 @@ gem "rack-contrib"
 gem "puma"
 gem "foreman"
 
-group :development do
-  gem "compass", "1.0.0.alpha.18"
-  gem "sass", "~> 3.3.3"
-end
+gem "compass", "0.12.5"
+gem 'sass', '3.2.19'
