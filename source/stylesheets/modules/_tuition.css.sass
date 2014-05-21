@@ -7,6 +7,16 @@
     font-size: 48px
     font-weight: $font-weight-light
 
+  h5
+    line-height: 1.42857
+    margin-bottom: 4em
+    font-size: 24px
+
+  h6
+    line-height: 1.42857
+    margin-bottom: 4em
+    text-align: left
+
   p, li
     margin-bottom: $font-size * $line-height
     text-align: left
@@ -17,10 +27,10 @@
     list-style: outside
 
   h3
-    margin: ($font-size * $line-height * 2) 0 10px
     font-size: 32px
     font-weight: $font-weight-light
     letter-spacing: 0.01em
+    margin-bottom: .5em
     text-align: left
 
   .graphs
@@ -53,9 +63,6 @@
         background-size: 67px 51px
         +border-radius(50%)
         +transition(background .3s)
-
-      &:hover:before
-        background-color: $blue
 
       @each $number in one, two, three, four
         &.#{$number}:before
