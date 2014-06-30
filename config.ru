@@ -1,6 +1,7 @@
 require "rack"
 require "middleman/rack"
 require "rack/contrib/try_static"
+require 'rack/reverse_proxy'
 
 # Build the static site when the app boots
 # `bundle exec middleman build`
@@ -12,6 +13,11 @@ use Rack::TryStatic,
     :root => "tmp",
     :urls => %w[/],
     :try => ['.html', 'index.html', '/index.html']
+
+use Rack::ReverseProxy do
+  reverse_proxy_options :preserve_host => true
+  reverse_proxy '/tutorials/', 'http://tutorials.jumpstartlab.com'
+end
 
 # Serve a 404 page if all else fails
 run lambda{ |env|
