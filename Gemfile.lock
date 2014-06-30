@@ -61,8 +61,6 @@ GEM
     rack (1.5.2)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
-    rack-reverse-proxy (0.4.4)
-      rack (>= 1.0.0)
     rack-test (0.6.2)
       rack (>= 1.0)
     rb-fsevent (0.9.4)
@@ -96,5 +94,4 @@ DEPENDENCIES
   middleman (~> 3.2.2)
   puma
   rack-contrib
-  rack-reverse-proxy
   sass (= 3.2.19)

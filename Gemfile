@@ -8,4 +8,3 @@ gem "puma"
 gem "foreman"
 gem "compass", "0.12.5"
 gem 'sass', '3.2.19'
-gem 'rack-reverse-proxy', :require => 'rack/reverse_proxy'
