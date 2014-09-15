@@ -1,6 +1,7 @@
 require "rack"
 require "middleman/rack"
 require "rack/contrib/try_static"
+require "rack/rewrite"
 
 # Build the static site when the app boots
 # `bundle exec middleman build`
