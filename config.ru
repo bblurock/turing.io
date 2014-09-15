@@ -13,6 +13,16 @@ use Rack::TryStatic,
     :urls => %w[/],
     :try => ['.html', 'index.html', '/index.html']
 
+REDIRECTS = {
+ "/slides" => "https://www.dropbox.com/sh/d1891mc6ssx7izc/AAACqGgZ8qeltor7L3R_coZIa?dl=0"
+}
+
+use Rack::Rewrite do
+  REDIRECTS.each do |from, to|
+    found from, to
+  end
+end
+
 # Serve a 404 page if all else fails
 run lambda{ |env|
   not_found_page = File.expand_path("../build/404.html", __FILE__)
