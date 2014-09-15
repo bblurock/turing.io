@@ -5,8 +5,25 @@
       %footer – <b>Kareem Grant</b>, Developer at <a href="http://getcardflight.org" target="_blank">CardFlight</a>
 
 .mod-contact
-  %form{method: 'post', action: '#'}
-    %h2 Contact
+  %h2 Contact
 
-    :markdown
-      For fastest response, email us at [contact@jumpstartlab.com](mailto:contact@jumpstartlab.com)
+  %p
+    For fastest response, email us at
+    = link_to 'contact@turing.io', 'mailto:contact@turing.io'
+  %br
+  .map
+    - link_to 'https://www.google.com/maps/place/Turing+School+of+Software+%26+Design/@39.749733,-104.999996,17z/data=!3m1!4b1!4m2!3m1!1s0x876c78c4f77d2b15:0x3ff4c7d558d0edd1' do
+      = image_tag 'http://maps.googleapis.com/maps/api/staticmap?center=39.749733,-104.999996&zoom=16&size=600x300&maptype=roadmap&markers=color:red%label:C%7C39.749733,-104.999996', class: 'image-map'
+  %p Turing School of Software & Design
+  %p 1510 Blake Street, Denver, CO 80202
+  %br
+  %p phone: 303.731.3117
+  %p fax: 303.374.3117
+  %p skype: turingschool
+  %br
+  %p
+    facebook:
+    = link_to 'facebook.com/turingschool', 'https://www.facebook.com/turingschool'
+  %p
+    twitter:
+    = link_to '@turingschool', 'https://twitter.com/turingschool'
