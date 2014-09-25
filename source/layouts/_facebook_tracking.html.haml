@@ -1,0 +1,38 @@
+// Retargetting
+
+:javascript
+  (function() {
+    var _fbq = window._fbq || (window._fbq = []);
+    if (!_fbq.loaded) {
+      var fbds = document.createElement('script');
+      fbds.async = true;
+      fbds.src = '//connect.facebook.net/en_US/fbds.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(fbds, s);
+      _fbq.loaded = true;
+    }
+    _fbq.push(['addPixelId', '291425327715299']);
+  })();
+  window._fbq = window._fbq || [];
+  window._fbq.push(['track', 'PixelInitialized', {}]);
+%noscript
+  %img{:alt => "", :height => "1", :src => "https://www.facebook.com/tr?id=291425327715299&ev=PixelInitialized", :style => "display:none", :width => "1"}
+
+// Conversion Rates
+
+:javascript
+  (function() {
+    var _fbq = window._fbq || (window._fbq = []);
+    if (!_fbq.loaded) {
+      var fbds = document.createElement('script');
+      fbds.async = true;
+      fbds.src = '//connect.facebook.net/en_US/fbds.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(fbds, s);
+      _fbq.loaded = true;
+    }
+  })();
+  window._fbq = window._fbq || [];
+  window._fbq.push(['track', '6021347647294', {'value':'0.00','currency':'USD'}]);
+%noscript
+  %img{:alt => "", :height => "1", :src => "https://www.facebook.com/tr?ev=6021347647294&cd[value]=0.00&cd[currency]=USD&noscript=1", :style => "display:none", :width => "1"}
