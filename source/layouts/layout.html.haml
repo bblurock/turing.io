@@ -4,8 +4,19 @@
   %head
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
+
     %link{href: '/images/turing.ico', rel: 'icon', type: 'image/ico'}
-    %title TURING School of Software & Design
+    %title TURING School of Software &amp; Design
+
+    %meta{name: 'description', content: "We'll turn you into a professional software developer"}
+
+    %meta{property: 'og:description', content: "We'll turn you into a professional software developer"}
+    %meta{property: 'og:image', content: 'http://turing.io/images/logo-embed.png'}
+    %meta{property: 'og:site_name', content: 'TURING School of Software & Design'}
+    %meta{property: 'og:title', content: 'TURING School of Software and Design'}
+    %meta{property: 'og:type', content: 'website'}
+    %meta{property: 'og:url', content: 'http://turing.io'}
+
     = javascript_include_tag 'modernizr'
     = stylesheet_link_tag 'application'
     = javascript_include_tag '//use.typekit.net/xxm2mvw.js'
@@ -13,6 +24,7 @@
     = partial '/layouts/facebook_tracking'
     :javascript
       try{Typekit.load();}catch(e){}
+
   %body{class: page_classes}
 
     %header.mod-header
@@ -34,4 +46,4 @@
     = javascript_include_tag 'application'
 
     %footer.mod-footer
-      %p © Copyright 2014 Turing School of Software &amp; Design, All rights reserved
+      %p &copy; Copyright 2014 Turing School of Software &amp; Design, All rights reserved
