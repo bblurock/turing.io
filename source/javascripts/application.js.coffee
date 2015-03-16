@@ -17,3 +17,24 @@ $(document).ready ->
 
   $('.index .mod-people figure').click ->
     window.location = '/team'
+
+  $.fn.extend
+      initSlider: -> 
+        $slider = $(this)
+        return false if !$slider.hasClass('slider')
+        console.log(this)
+        setInterval ->
+          $activeSlide = $slider.find('.active')
+          $nextSlide = $activeSlide.next()
+          $nextSlide = $slider.find('.slide').first() if($nextSlide.length == 0) 
+          $activeSlide.removeClass('active')
+          $nextSlide.addClass('active')
+          return
+        , 4000
+        return
+
+  $('.slider').initSlider()
+  
+
+
+  return
