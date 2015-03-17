@@ -2,8 +2,30 @@
   padding: 250px 45px 105px
   text-align: center
   color: #fff
-  background: #333 image-url("bg_intro.jpg") center center no-repeat
-  background-size: cover
+  position: relative
+
+  .slider, 
+  .slide 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  .mod-intro-bg.slider
+    background: #333
+    z-index: -1
+    overflow: hidden
+    .slide
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      opacity: 0
+      transition: opacity 0.8s ease-in-out
+      -webkit-transition: opacity 0.8s ease-in-out
+      -moz-transition: opacity 0.8s ease-in-out
+      -o-transition: opacity 0.8s ease-in-out
+      &.active 
+        opacity: 1
 
   +max-width(400px)
     padding-top: 300px
