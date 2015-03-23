@@ -19,14 +19,14 @@ $(document).ready ->
     window.location = '/team'
 
   $.fn.extend
-      initSlider: (timer = 4000) ->
+      initSlider: (timer = 5000) ->
 
         $slider = $(this)
         return false if !$slider.hasClass('slider')
         setInterval ->
           $activeSlide = $slider.find('.active')
           $nextSlide = $activeSlide.next()
-          $nextSlide = $slider.find('.slide').first() if($nextSlide.length == 0) 
+          $nextSlide = $slider.find('.slide').first() if($nextSlide.length == 0)
           $activeSlide.removeClass('active')
           $nextSlide.addClass('active')
           return
@@ -34,7 +34,7 @@ $(document).ready ->
         return
 
   $('#home-slider').initSlider()
-  
+
 
 
   return
