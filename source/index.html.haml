@@ -19,16 +19,27 @@
     .col.first
       %h3 Instruction
       %p
-        Being a good developer does not prepare you to teach development. The Turing staff blends programming experience with years of classroom instruction. No other team can match our depth of expertise and on-the-ground instructional experience.
-
+        There are many organizations who claim to teach programming. Few of them have our experience
+        and track record. Our staff mixes educators-turned-programmers and programmers-turned-educators to
+        deliver the highest quality instruction anywhere.
+        = link_to 'Learn more about the team.', '/team.html'
     .col
       %h3 Curriculum
       %p
-        No other program approaches the depth of expertise our students develop. Beyond simple Rails applications, our students master Test-Driven Development, build and consume APIs, implement systems of coordinating applications, and understand strong Object-Oriented design.
+        We pracitce the tools and techniques that you need to build world-class applications.
+        What we teach isn't available in any four-year degree program, and we go much deeper
+        than a bootcamp. Turing's curriculum is setup to prepare you for a career of success.
+        = link_to 'Learn more about the program and curriculum.', '/program.html'
     .col
       %h3 Results
       %p
-        We build professional developers. Our seven-month instructional program is carefully crafted to prepare high-aptitude individuals for careers as software developers. Succeed in our program and you won’t just be an intern, you’ll be valuable.
+        We guarantee that graduates will find a high-quality technical job paying
+        at least $65K within three months or we'll refund your tuition. Our hiring
+        companies come back again and again because our graduates succeed. See
+        student portfolios at
+        = link_to 'http://people.turing.io', 'http://people.turing.io'
+        and read reviews of the program on
+        = link_to 'CourseReport', 'https://www.coursereport.com/schools/turing/#/about'
 
     %p= link_to 'Learn more', '/difference.html', class: 'button gray'
 
@@ -37,84 +48,6 @@
     %blockquote
       “I chose this program because it was the only one that promised to produce professional developers and not just give you a kickstart. I had no computer science background and needed to have a real job at the end of it. <br/><br/>We learned by doing – by working together to build real applications, completely immersed in programming. Now I use those skills every day.“
       %footer – <b>Jennifer Eliuk</b>, Developer at <a href="http://turbovote.org" target="_blank">TurboVote</a>
-
-.mod-ankeiler
-  .layout-inner-wrap
-    %h2 Our Team
-    %p
-      Our instructional team is a mix of educators and developers, perfectly blended to maximize your learning.
-    %p= link_to 'Learn more', '/team.html', class: 'button'
-
-.mod-people
-  %ul.people
-    %li
-      %figure{style: "background-image: url(#{image_path('p_jeff.jpg')})"}= image_tag('p_jeff_gray.jpg', alt: 'Jeff Casimir')
-      %h3 Jeff Casimir
-      %ul.social
-        %li= link_to 'Twitter', 'https://twitter.com/j3', class: 'twitter'
-        %li= link_to 'Github', 'https://github.com/jcasimir', class: 'github'
-    %li
-      %figure{style: "background-image: url(#{image_path('p_jorge.jpg')})"}= image_tag('p_jorge_gray.jpg', alt: 'Jorge Téllez')
-      %h3 Jorge Téllez
-      %ul.social
-        %li= link_to 'Twitter', 'https://twitter.com/novohispano', class: 'twitter'
-        %li= link_to 'Github', 'https://github.com/novohispano', class: 'github'
-    %li
-      %figure{style: "background-image: url(#{image_path('p_josh.jpg')})"}= image_tag('p_josh_gray.jpg', alt: 'Josh Cheek')
-      %h3 Josh Cheek
-      %ul.social
-        %li= link_to 'Twitter', 'https://twitter.com/josh_cheek', class: 'twitter'
-        %li= link_to 'Github', 'https://github.com/JoshCheek', class: 'github'
-    %li
-      %figure{style: "background-image: url(#{image_path('p_rachel.jpg')})"}= image_tag('p_rachel_gray.jpg', alt: 'Rachel Warbelow')
-      %h3 Rachel Warbelow
-      %ul.social
-        %li= link_to 'Twitter', 'https://twitter.com/rwarbelow', class: 'twitter'
-        %li= link_to 'Github', 'https://github.com/rwarbelow', class: 'github'
-    %li
-      %figure{style: "background-image: url(#{image_path('p_steve.jpg')})"}= image_tag('p_steve_gray.jpg', alt: 'Steve Kinney')
-      %h3 Steve Kinney
-      %ul.social
-        %li= link_to 'Twitter', 'https://twitter.com/stevekinney', class: 'twitter'
-        %li= link_to 'Github', 'https://github.com/stevekinney', class: 'github'
-    %li
-      %figure{style: "background-image: url(#{image_path('p_raissa.jpg')})"}= image_tag('p_raissa_gray.jpg', alt: 'Raissa Shafer')
-      %h3 Raissa Shafer
-      %ul.social
-        -# %li= link_to 'Twitter', 'https://twitter.com/joshuamejia', class: 'twitter'
-        %li= link_to 'Github', 'https://github.com/raissashafer', class: 'github'
-    %li
-      %figure{style: "background-image: url(#{image_path('p_josh_m.jpg')})"}= image_tag('p_josh_m_gray.jpg', alt: 'Josh Mejia')
-      %h3 Josh Mejia
-      %ul.social
-        %li= link_to 'Twitter', 'https://twitter.com/joshuamejia', class: 'twitter'
-        %li= link_to 'Github', 'https://github.com/jmejia', class: 'github'
-    %li
-      %figure{style: "background-image: url(#{image_path('p_horace.jpg')})"}= image_tag('p_horace_gray.jpg', alt: 'Horace Williams')
-      %h3 Horace Williams
-      %ul.social
-        %li= link_to 'Twitter', 'https://twitter.com/worace', class: 'twitter'
-        %li= link_to 'Github', 'https://github.com/worace', class: 'github'
-    %li
-      %figure{style: "background-image: url(#{image_path('p_heather.jpg')})"}= image_tag('p_heather_gray.jpg', alt: 'Heather Winner')
-      %h3 Heather Winner
-      %ul.social
-        %li= link_to 'Twitter', 'https://twitter.com/funnygirrl', class: 'twitter'
-        -# %li= link_to 'Github', 'https://github.com/jmejia', class: 'github'
-    -# %li
-    -#   %figure{style: "background-image: url(#{image_path('p_josh.jpg')})"}= image_tag('p_josh_gray.jpg', alt: 'Josh Cheek')
-    -#   %h3 Josh Cheek
-    -#   %ul.social
-    -#     %li= link_to 'Twitter', 'https://twitter.com/josh_cheek', class: 'twitter'
-    -#     %li= link_to 'Github', 'https://github.com/joshcheek', class: 'github'
-
-
-.mod-ankeiler
-  .layout-inner-wrap
-    %h2 The Program
-    %p
-      What can you accomplish in seven months? Our students build the skills they need to develop professional web applications: test-driven development, object-oriented design, and how to decompose complex problems. As programmers they become proficient with Ruby, Rails, JavaScript, REST, providing and consuming APIs, and source control. As developers they learn to work in small teams, communicate, and collaborate effectively.
-    %p= link_to 'Learn more', '/program.html', class: 'button'
 
 = partial 'get_started'
 = partial 'twitter_tracking'
