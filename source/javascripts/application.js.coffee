@@ -19,7 +19,7 @@ $(document).ready ->
     window.location = '/team'
 
   $.fn.extend
-      initSlider: (timer = 5000) ->
+      initSlider: (timer = 8000) ->
 
         $slider = $(this)
         return false if !$slider.hasClass('slider')
