@@ -2,7 +2,7 @@
 
 This site uses Ruby, Middleman (built on Sinatra), and Sass. To get it running locally you should:
 
-* Use Ruby 2.1.4
+* Use Ruby 2.2.1
 * Clone the repo
 * Run `bundle install` to setup dependencies
 * Run `bundle exec middleman` to start the server
