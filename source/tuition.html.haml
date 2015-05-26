@@ -1,7 +1,7 @@
 .mod-tuition
   .layout-inner-wrap
     %h2 Tuition
-    %h5
+    %p
       Program tuition is $17,500. Students may elect to defer a portion of their payment until after they are employed. The first monthly payment is due eight weeks after finishing the program.
 
     .graphs
@@ -48,7 +48,13 @@
             %dd $472/mo
             %dt Total Paid
             %dd.total $22,000
-      %h6
+
+      %p.deferment
+        Deferment options powered by LendLayer
+        %br
+        = link_to image_tag('logos/lendlayer.png', :alt => 'LendLayer logo', :class => 'lendlayer'), 'https://lendlayer.com'
+
+      %p
         If you're a right fit for our program we'll do our best to help you afford it. Get accepted first, then we'll worry about the finances. Cost-of-living and housing are not included.
         Tuition includes a new Apple laptop, but students supplying their own "Mid 2012" or newer MacBook Air or Pro running OS X 10.9 can take a $1200 credit from their up-front payment.
 
