@@ -17,7 +17,8 @@ use Rack::TryStatic,
 REDIRECTS = {
  "/slides" => "https://www.dropbox.com/sh/d1891mc6ssx7izc/AAACqGgZ8qeltor7L3R_coZIa?dl=0",
  "/warrior" => "http://tutorials.jumpstartlab.com/projects/ruby_warrior.html",
- "/community" => "http://www.meetup.com/Turing-Community-Events/"
+ "/community" => "http://www.meetup.com/Turing-Community-Events/",
+ "/jcasimir" => "https://jcasimir.youcanbook.me/"
 }
 
 use Rack::Rewrite do
