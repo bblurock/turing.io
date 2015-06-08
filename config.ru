@@ -19,7 +19,9 @@ REDIRECTS = {
  "/warrior" => "http://tutorials.jumpstartlab.com/projects/ruby_warrior.html",
  "/community" => "http://www.meetup.com/Turing-Community-Events/",
  "/jcasimir" => "https://jcasimir.youcanbook.me/",
- "/steve" => "https://stevekinney.youcanbook.me/"
+ "/steve" => "https://stevekinney.youcanbook.me/",
+ "/brand" => "http://brandfolder.com/turing",
+ "/logo" => "http://brandfolder.com/turing"
 }
 
 use Rack::Rewrite do
