@@ -11,7 +11,7 @@ layout: none
 
     %link{href: '/images/turing.ico', rel: 'icon', type: 'image/ico'}
 
-    %meta{name: "google-site-verification", content: "E1wSQxawEQdvzeXk-MctD30mb4ySdv2ZUtcq651iNh0"}
+    %meta{name: 'google-site-verification', content: 'E1wSQxawEQdvzeXk-MctD30mb4ySdv2ZUtcq651iNh0'}
 
     %meta{property: 'og:image',       content: 'http://turing.io/images/logo-embed.png'}
     %meta{property: 'og:site_name',   content: 'Turing School of Software & Design'}
@@ -49,9 +49,4 @@ layout: none
     = yield
 
     = javascript_include_tag 'application'
-
-    %footer.mod-footer
-      %p &copy; Turing School of Software &amp; Design, a Colorado Non-Profit Organization
-      %p
-        = link_to "contact@turing.io", "mailto:contact@turing.io"
-        | 1510 Blake Street, Denver, CO 80202
+    = partial '/layouts/footer'

@@ -1,0 +1,15 @@
+%footer.mod-footer
+  %span{ itemscope: '', itemtype: 'http://schema.org/EducationalOrganization' }
+  %p
+    = succeed ',' do
+      %span{ itemprop: 'name' } Turing School of Software & Design
+    a Colorado Non-Profit Organization
+  %p{ itemprop: 'address', itemscope: '', itemtype: 'http://schema.org/PostalAddress' }
+    %a{ href: 'mailto:contact@turing.io' } contact@turing.io
+    |
+    = succeed ',' do
+      %span{ itemprop: 'streetAddress' } 1510 Blake Street
+    = succeed ',' do
+      %span{ itemprop: 'addressLocality' } Denver
+    %span{ itemprop: 'addressRegion' } CO
+    %span{ itemprop: 'postalCode' } 80202
