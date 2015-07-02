@@ -1,8 +1,8 @@
-require "rack"
-require "middleman/rack"
-require "rack/contrib/try_static"
-require "rack/rewrite"
-require "honeybadger"
+require 'rack'
+require 'middleman/rack'
+require 'rack/contrib/try_static'
+require 'rack/rewrite'
+require 'honeybadger'
 # Build the static site when the app boots
 # `bundle exec middleman build`
 
@@ -11,18 +11,19 @@ use Rack::Head
 
 # Attempt to serve static HTML files
 use Rack::TryStatic,
-    :root => "tmp",
+    :root => 'tmp',
     :urls => %w[/],
     :try => ['.html', 'index.html', '/index.html']
 
 REDIRECTS = {
- "/slides"    => "https://www.dropbox.com/sh/d1891mc6ssx7izc/AAACqGgZ8qeltor7L3R_coZIa?dl=0",
- "/warrior"   => "http://tutorials.jumpstartlab.com/projects/ruby_warrior.html",
- "/community" => "http://www.meetup.com/Turing-Community-Events/",
- "/jcasimir"  => "https://jcasimir.youcanbook.me/",
- "/steve"     => "https://stevekinney.youcanbook.me/",
- "/brand"     => "http://brandfolder.com/turing",
- "/logo"      => "http://brandfolder.com/turing"
+ '/slides'    => 'https://www.dropbox.com/sh/d1891mc6ssx7izc/AAACqGgZ8qeltor7L3R_coZIa?dl=0',
+ '/warrior'   => 'http://tutorials.jumpstartlab.com/projects/ruby_warrior.html',
+ '/community' => 'http://www.meetup.com/Turing-Community-Events/',
+ '/jcasimir'  => 'https://jcasimir.youcanbook.me/',
+ '/steve'     => 'https://stevekinney.youcanbook.me/',
+ '/brand'     => 'http://brandfolder.com/turing',
+ '/logo'      => 'http://brandfolder.com/turing',
+ '/blog'      => 'https://blog.turing.io'
 }
 
 use Rack::Rewrite do
@@ -41,7 +42,7 @@ use Honeybadger::Rack::MetricsReporter, honeybadger_config
 
 # Serve a 404 page if all else fails
 run lambda{ |env|
-  not_found_page = File.expand_path("../build/404.html", __FILE__)
+  not_found_page = File.expand_path('../build/404.html', __FILE__)
   if File.exist?(not_found_page)
     [ 404, { 'Content-Type'  => 'text/html'}, [File.read(not_found_page)] ]
   else
