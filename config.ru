@@ -11,9 +11,9 @@ use Rack::Head
 
 # Attempt to serve static HTML files
 use Rack::TryStatic,
-    :root => 'tmp',
-    :urls => %w[/],
-    :try => ['.html', 'index.html', '/index.html']
+    root: 'tmp',
+    urls: %w(/),
+    try:  %w(.html index.html /index.html)
 
 REDIRECTS = {
  '/slides'    => 'https://www.dropbox.com/sh/d1891mc6ssx7izc/AAACqGgZ8qeltor7L3R_coZIa?dl=0',
@@ -27,9 +27,7 @@ REDIRECTS = {
 }
 
 use Rack::Rewrite do
-  REDIRECTS.each do |from, to|
-    found from, to
-  end
+  REDIRECTS.each { |from, to| found from, to }
 end
 
 # Configure and start Honeybadger
