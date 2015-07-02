@@ -23,7 +23,7 @@ REDIRECTS = {
  '/steve'     => 'https://stevekinney.youcanbook.me/',
  '/brand'     => 'http://brandfolder.com/turing',
  '/logo'      => 'http://brandfolder.com/turing',
- '/blog'      => 'https://blog.turing.io'
+ '/blog'      => 'http://blog.turing.io'
 }
 
 use Rack::Rewrite do
