@@ -18,13 +18,14 @@ use Rack::TryStatic,
 REDIRECTS = {
  '/slides'    => 'https://www.dropbox.com/sh/d1891mc6ssx7izc/AAACqGgZ8qeltor7L3R_coZIa?dl=0',
  '/warrior'   => 'http://tutorials.jumpstartlab.com/projects/ruby_warrior.html',
- '/community' => 'http://www.meetup.com/Turing-Community-Events/',
- '/jcasimir'  => 'https://jcasimir.youcanbook.me/',
- '/jtellez'   => 'https://jtellez.youcanbook.me/',
- '/steve'     => 'https://stevekinney.youcanbook.me/',
+ '/community' => 'http://www.meetup.com/Turing-Community-Events',
+ '/jcasimir'  => 'https://jcasimir.youcanbook.me',
+ '/jtellez'   => 'https://jtellez.youcanbook.me',
+ '/steve'     => 'https://stevekinney.youcanbook.me',
  '/brand'     => 'http://brandfolder.com/turing',
  '/logo'      => 'http://brandfolder.com/turing',
- '/blog'      => 'http://blog.turing.io'
+ '/blog'      => 'http://blog.turing.io',
+ '/hiring'    => 'http://people.turing.io'
 }
 
 use Rack::Rewrite do
