@@ -4,87 +4,75 @@
 .mod-tuition
   .layout-inner-wrap
     %h2 Tuition
-    %p
-      Program tuition is $17,500. Students may elect to defer a portion of their payment until after they are employed. The first monthly payment is due eight weeks after finishing the
-      #{link_to('program', '/program')}.
-
-    .graphs
-      %ul
-        %li.one
-          %h3 Up Front Payment
-          %dl
-            %dt Deposit
-            %dd $1,000
-            %dt First Day
-            %dd $16,500
-            %dt Total Paid
-            %dd.total $17,500
-        %li.two
-          %h3 Low Deferment
-          %dl
-            %dt Deposit
-            %dd $1,000
-            %dt First Day
-            %dd $9,000
-            %dt 24 months @
-            %dd $375/mo
-            %dt Total Paid
-            %dd.total $19,000
-        %li.three
-          %h3 Medium Deferment
-          %dl
-            %dt Deposit
-            %dd $1,000
-            %dt First Day
-            %dd $6,500
-            %dt 30 months @
-            %dd $433/mo
-            %dt Total Paid
-            %dd.total $20,500
-        %li.four
-          %h3 Maximum Deferment
-          %dl
-            %dt Deposit
-            %dd $1,000
-            %dt First Day
-            %dd $4,000
-            %dt 36 months @
-            %dd $472/mo
-            %dt Total Paid
-            %dd.total $22,000
-
-      -# %p.deferment
-      -#   Deferment options powered by LendLayer
-      -#   %br
-      -#   = link_to image_tag('logos/lendlayer.png', alt: 'LendLayer logo', class: 'lendlayer'), 'https://lendlayer.com'
-
-      %p
-        If you're a right fit for our software development program we'll do our best to help you afford it. Get accepted first, then we'll worry about the finances. Cost-of-living and housing are not included.
-        Tuition includes a new Apple laptop, but students supplying their own "Mid 2012" or newer MacBook Air or Pro running OS X 10.9 can take a $1,200 credit from their up-front payment.
+    %p Our program tuition is $17,500. To enroll, students can pay a $1,000 deposit and sign their enrollment agreement to secure a place in any open cohort. Cost-of-living and housing are not included.
+    %p Our tuition includes a new Apple laptop, but students supplying their own "Mid 2012" or newer MacBook Air or Pro running OS X 10.9 can take a $1,200 credit from their up-front payment.
 
     .financing-options
-      %h3 Alternative Financing Options
+      %h3 Financing Options
+
       :markdown
-        Interested in exploring other ways to finance your education?
         To make our program more accessible, Turing has joined forces with three great financing companies: [Earnest](https://www.meetearnest.com/turing), [Climb](https://climbcredit.co/student?schoolid=TS128551034259) and [Affirm](https://www.affirm.com).
         These partners believe so strongly in the value of a Turing School education that they’ve set up exclusive agreements with us to offer special status to Turing students.
-        By working with one of these partners, you can start at Turing for as little as $1,000 up front and finance the rest at reasonable rates.
 
-      = link_to image_tag('logos/earnest.png', alt: 'Earnest logo', class: 'earnest'), 'https://www.meetearnest.com/turing'
-      = link_to image_tag('logos/climb.png', alt: 'Climb logo', class: 'climb'), 'https://climbcredit.co/student?schoolid=TS128551034259'
-      = link_to image_tag('logos/affirm.png', alt: 'Affirm logo', class: 'affirm'), 'https://www.affirm.com/education/turingschool/info'
+        By working with one of these partners, you can start at Turing for as little as $1,000 up front and finance the rest at reasonable rates. You can check the financing options available below. Once you are accepted, we will send you an application link with follow up steps.
 
-    %h3 Tuition Guarantee
-    :markdown
-      We guarantee that we'll help you find a job offer of at least $65,000 in the US within three months of graduation or we'll **fully refund** your tuition. To qualify you must:
+      .graphs
+        = link_to image_tag('logos/earnest.png', alt: 'Earnest logo', class: 'earnest'), 'https://www.meetearnest.com/turing'
+        = link_to image_tag('logos/climb.png',   alt: 'Climb logo',   class: 'climb'), 'https://climbcredit.co/student?schoolid=TS128551034259'
+        = link_to image_tag('logos/affirm.png',  alt: 'Affirm logo',  class: 'affirm'), 'https://www.affirm.com/education/turingschool/info'
 
-      * graduate, which means passing the final assessment of the final course
-      * be eligible to work in the United States
-      * work with our [team](/team) to actively pursue jobs in a timely manner
-      * not limit the job search to a single city or state
+    .alternative-in-house-financing
+      %h3 Alternative In-House Financing
 
-      Even if you **don't** meet these requirements, it's very likely we can still help you find a job. All students in our previous programs found jobs within the three month window, regardless
-      of graduation.
+      :markdown
+        For students unable to secure outside financing, Turing offers its own payment plans. The first monthly payment is due eight weeks after finishing the
+        #{link_to('program', '/program')}. There is no penalty if you want to pay early.
 
+      .graphs
+        %ul
+          %li.one
+            %h3 Low<br>Deferment
+            %dl
+              %dt Deposit
+              %dd $1,000
+              %dt First Day
+              %dd $9,000
+              %dt 24 months @
+              %dd $375/mo
+              %dt Total Paid
+              %dd.total $19,000
+          %li.two
+            %h3 Medium<br>Deferment
+            %dl
+              %dt Deposit
+              %dd $1,000
+              %dt First Day
+              %dd $6,500
+              %dt 30 months @
+              %dd $433/mo
+              %dt Total Paid
+              %dd.total $20,500
+          %li.three
+            %h3 Maximum<br>Deferment
+            %dl
+              %dt Deposit
+              %dd $1,000
+              %dt First Day
+              %dd $4,000
+              %dt 36 months @
+              %dd $472/mo
+              %dt Total Paid
+              %dd.total $22,000
 
+    .tuition-guarantee
+      %h3 Tuition Guarantee Notice
+
+      :markdown
+        [The Colorado Division of Private Occupational Schools (DPOS)](http://highered.colorado.gov/dpos/) informed us that it had not interpreted the law correctly and that it had made a mistake when it approved Turing's Tuition Reimbursement Guarantee. Therefore, we are no longer authorized to guarantee our students' tuition.
+
+        This decision won't affect your outcome. We are deeply invested in your success. We are still maintaining our job search assistance program and we will continue to work with each student to develop a job search plan, get assistance in drafting resumes, prepare for technical interviews and provide professional development tools, among other things.
+
+        **94 percent of our graduates** find employment as professional software developers within 3 months after graduation.
+
+        If you would like more information on this change, please contact DPOS. You can find their contact information [here](http://highered.colorado.gov/DPOS/About/staff.html).
 = partial 'get_started'

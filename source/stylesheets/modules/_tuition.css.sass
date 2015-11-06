@@ -40,15 +40,12 @@
       font-size: 0
 
     li
-      width: 46%
+      width: calc(100% / 3)
       display: inline-block
       vertical-align: top
       margin-bottom: 40px
       font-size: $font-size
       text-align: center
-
-      &:nth-child(even)
-        margin-left: 8%
 
       +max-width(800px)
         width: 100%
@@ -95,7 +92,9 @@
     .total
       color: $blue
 
-  .financing-options
+  .financing-options,
+  .alternative-in-house-financing,
+  .tuition-guarantee
     margin-top: 55px
     margin-bottom: 55px
 
